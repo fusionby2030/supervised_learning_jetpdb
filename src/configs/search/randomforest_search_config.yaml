@@ -1,0 +1,25 @@
+model: 
+  object: RandomForestInterface
+initial_params: 
+  criterion: squared_error 
+  max_depth:  8 
+  max_leaf_nodes: 1000
+  max_samples: 1.0
+  n_estimators: 100 
+search_space: 
+  criterion: squared_error
+  max_samples: 1.0
+  n_estimators:
+    l: 25
+    u: 500
+    dtype: randint
+  max_depth: 
+    l: 1
+    u: 8
+    dtype: randint
+  max_leaf_nodes: 
+    l: 10
+    u: 1000
+    dtype: randint
+
+  

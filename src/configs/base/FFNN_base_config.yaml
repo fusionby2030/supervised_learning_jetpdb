@@ -1,0 +1,16 @@
+model:
+  batch_size: 128
+  criterion: nn.MSELoss
+  epochs: 50
+  hidden_dims:
+  - 200
+  - 200
+  - 200
+  - 200
+  learning_rate: 0.001
+  mp_dim: 11
+  object: FFNNInterface
+  optimizer: optim.Adam
+trainer:
+  input_space: 1
+  num_cv: 40

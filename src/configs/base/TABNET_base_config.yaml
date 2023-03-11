@@ -1,0 +1,17 @@
+model:
+  object: TABNETInterface
+  batch_size: 64
+  n_d: 16
+  n_a: 16
+  n_steps: 4
+  n_independent: 4
+  n_shared: 6
+  virtual_batch_size: 64
+  learning_rate: 0.005
+  mp_dim: 11
+  epochs: 100
+  optimizer: Adam
+  loss: MSELoss
+trainer:
+  input_space: 1
+  num_cv: 40

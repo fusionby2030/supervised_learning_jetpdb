@@ -1,0 +1,40 @@
+model: 
+  object: FFNNInterface
+initial_params: 
+  optimizer: optim.Adam
+  epochs: 50
+  criterion: nn.MSELoss
+  learning_rate: 0.001
+  batch_size: 128
+  hidden_dims:
+    - 400
+    - 400
+    - 400
+    - 400
+search_space: 
+  optimizer: optim.Adam
+  criterion: nn.MSELoss
+  epochs: 50
+  batch_size: 
+    l: 64
+    u: 512
+    dtype: randint
+  learning_rate: 
+    l: 0.00001
+    u: 1.0 
+    dtype: loguniform
+  hidden_dims:
+    - dtype: randint
+      l: 200
+      u: 500
+    - dtype: randint
+      l: 200
+      u: 500
+    - dtype: randint
+      l: 200
+      u: 500
+    - dtype: randint
+      l: 200
+      u: 500
+
+  

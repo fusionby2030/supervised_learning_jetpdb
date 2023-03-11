@@ -1,0 +1,10 @@
+model:
+  criterion: squared_error
+  max_depth: 8
+  n_estimators: 1000
+  max_leaf_nodes: 500
+  max_samples: 1.0
+  object: RandomForestInterface
+trainer:
+  input_space: 1
+  num_cv: 15

@@ -1,0 +1,9 @@
+pyyaml==5.4.1
+xgboost==1.7.4
+torch==1.13.1
+scikit-learn==1.2.2
+catboost==1.1.1
+pytorch_tabular==1.0.1
+verstack==3.6.6
+ray[tune]==2.3.0
+hyperopt==0.2.7

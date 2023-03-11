@@ -1,0 +1,11 @@
+model:
+  object: NODEInterface
+  batch_size: 'all'
+  epochs: 50
+  learning_rate: 0.01
+  mp_dim: 11
+  optimizer: Adam
+  loss: MSELoss
+trainer:
+  input_space: 1
+  num_cv: 40

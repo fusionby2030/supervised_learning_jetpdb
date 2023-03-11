@@ -1,0 +1,6 @@
+data/
+__pycache__/
+.supervised/
+catboost_info/
+saved_models/
+.pt_temp/

@@ -1,0 +1,52 @@
+model: 
+  object: TABNETInterface
+initial_params: 
+  optimizer: Adam
+  loss: MSELoss
+  epochs: 100
+  learning_rate: 0.001
+  batch_size: 128
+  n_d: 16
+  n_a: 16
+  n_steps: 8
+  n_independent: 2
+  n_shared: 2
+  gamma: 1.0
+search_space: 
+  optimizer: Adam
+  loss: MSELoss
+  epochs: 100
+  gamma: 
+    l: 0.5
+    u: 2.0
+    dtype: uniform
+  n_d: 
+    l: 4
+    u: 64
+    dtype: randint
+  n_a: 
+    l: 4
+    u: 64
+    dtype: randint
+  n_steps: 
+    l: 3
+    u: 10
+    dtype: randint
+  n_independent: 
+    l: 1
+    u: 32
+    dtype: randint
+  n_shared: 
+    l: 8
+    u: 32
+    dtype: randint
+  batch_size: 
+    l: 128
+    u: 512
+    dtype: randint
+  learning_rate: 
+    l: 0.00001
+    u: 1.0 
+    dtype: loguniform
+
+  

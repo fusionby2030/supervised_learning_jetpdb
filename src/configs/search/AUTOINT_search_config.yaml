@@ -1,0 +1,70 @@
+model: 
+  object: AUTOINTInterface
+initial_params: 
+  optimizer: Adam
+  loss: MSELoss
+  epochs: 100
+  learning_rate: 0.001
+  batch_size: 128
+  attn_embed_dim: 32
+  num_attn_blocks: 8
+  embedding_dim: 16
+  attn_dropouts: 0.0
+  embedding_dropout: 0.0
+  dropout: 0.0
+  hidden_dims:
+    - 256
+    - 128
+    - 64
+    - 32
+search_space: 
+  optimizer: Adam
+  loss: MSELoss
+  epochs: 100
+  dropout: 
+    l: 0.0
+    u: 0.25 
+    dtype: uniform
+  embedding_dropout: 
+    l: 0.0
+    u: 0.25
+    dtype: uniform
+  attn_dropouts: 
+    l: 0.0
+    u: 0.25
+    dtype: uniform
+  embedding_dim: 
+    l: 2
+    u: 128
+    dtype: randint
+  num_attn_blocks: 
+    l: 1
+    u: 13
+    dtype: randint
+  attn_embed_dim: 
+    l: 8
+    u: 128
+    dtype: randint
+  batch_size: 
+    l: 4
+    u: 512
+    dtype: randint
+  learning_rate: 
+    l: 0.0001
+    u: 1.0 
+    dtype: loguniform
+  hidden_dims:
+    - dtype: randint
+      l: 16
+      u: 512
+    - dtype: randint
+      l: 16
+      u: 512
+    - dtype: randint
+      l: 16
+      u: 512
+    - dtype: randint
+      l: 16
+      u: 512
+
+  

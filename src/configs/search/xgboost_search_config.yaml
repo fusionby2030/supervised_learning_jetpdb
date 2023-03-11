@@ -1,0 +1,53 @@
+model: 
+  object: XGBoostInterface
+initial_params: 
+  learning_rate: 0.1
+  max_depth: 3
+  objective: reg:squarederror
+  subsample: 1.0
+  colsample_bytree: 1.0
+  colsample_bylevel: 1.0
+  min_child_weight: 1.0
+  alpha: 1.0
+  gamma: 1.0
+  lambda: 1.0
+search_space: 
+  objective: reg:squarederror
+  subsample: 
+    l: 0.35
+    u: 1.0
+    dtype: uniform 
+  colsample_bytree: 
+    l: 0.35
+    u: 1.0
+    dtype: uniform
+  colsample_bylevel: 
+    l: 0.2
+    u: 1.0
+    dtype: uniform
+  min_child_weight: 
+    l: 0.0000000001
+    u: 2.0
+    dtype: loguniform
+  alpha: 
+    l: 0.0000000001
+    u: 2.0
+    dtype: loguniform
+  lambda: 
+    l: 0.0000000001
+    u: 2.0
+    dtype: loguniform
+  gamma: 
+    l: 0.0000000001
+    u: 2.0
+    dtype: loguniform
+  learning_rate:
+    l: 0.01
+    u: 1.0
+    dtype: loguniform
+  max_depth: 
+    l: 3
+    u: 11
+    dtype: randint
+
+  

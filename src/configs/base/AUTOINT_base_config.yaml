@@ -1,0 +1,11 @@
+model:
+  object: AUTOINTInterface
+  batch_size: 64
+  learning_rate: 0.001
+  mp_dim: 11
+  epochs: 100
+  optimizer: Adam
+  loss: MSELoss
+trainer:
+  input_space: 1
+  num_cv: 40

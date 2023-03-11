@@ -1,0 +1,42 @@
+model: 
+  object: NODEInterface
+initial_params: 
+  optimizer: Adam
+  loss: MSELoss
+  epochs: 100
+  learning_rate: 0.001
+  batch_size: 256
+  embedding_dropout: 0.0
+  input_dropout: 0.0
+  depth: 6
+  num_layers: 1
+  num_trees: 256
+search_space: 
+  optimizer: Adam
+  loss: MSELoss
+  epochs: 100
+  depth: 6
+  batch_size: 'all'
+  learning_rate: 0.001
+  input_dropout: 
+    l: 0.0
+    u: 0.25 
+    dtype: uniform
+  embedding_dropout: 
+    l: 0.0
+    u: 0.25
+    dtype: uniform
+  num_layers: 
+    l: 1
+    u: 8
+    dtype: randint
+  num_trees: 
+    l: 256
+    u: 4096
+    dtype: randint
+  batch_size: 
+    l: 56
+    u: 1024
+    dtype: randint
+
+  

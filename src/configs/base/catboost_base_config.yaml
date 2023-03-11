@@ -1,0 +1,8 @@
+model:
+  eta: 0.1
+  loss_function: MAE
+  num_trees: 50
+  object: CatBoostInterface
+trainer:
+  input_space: 1
+  num_cv: 40

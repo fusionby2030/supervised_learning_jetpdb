@@ -1,0 +1,8 @@
+model:
+  criterion: squared_error
+  max_depth: 10
+  n_estimators: 100
+  object: ExtraTreesInterface
+trainer:
+  input_space: 1
+  num_cv: 40

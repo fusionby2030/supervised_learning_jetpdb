@@ -1,0 +1,15 @@
+model:
+  learning_rate: 0.09044262754673428
+  max_depth: 10
+  subsample: 0.8532211844207735
+  colsample_bytree: 0.9791866276421256
+  colsample_bylevel: 0.6515061148701213
+  min_child_weight: 1.9553984275377125
+  alpha: 2.779409023263026e-10
+  gamma: 0.0893975763592
+  lambda: 0.010128453654678333
+  object: XGBoostInterface
+  objective: reg:squarederror
+trainer:
+  input_space: 3
+  num_cv: 15

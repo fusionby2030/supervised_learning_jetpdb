@@ -1,0 +1,37 @@
+model: 
+  object: CatBoostInterface
+initial_params: 
+  loss_function: MAE
+  max_depth:  8 
+  eta: 0.1
+  leaf_estimation_iterations: 1
+  bagging_temperature: 1.0 
+  l2_leaf_reg: 1.0
+  od_pval: 10
+  iterations: 2000
+search_space: 
+  loss_function: MAE
+  iterations: 2000
+  od_pval: 10
+  leaf_estimation_iterations:
+    l: 1
+    u: 10
+    dtype: randint
+  l2_leaf_reg: 
+    l: 1.0
+    u: 3.0
+    dtype: loguniform
+  max_depth: 
+    l: 1
+    u: 8
+    dtype: randint
+  bagging_temperature: 
+    l: 0
+    u: 1
+    dtype: uniform
+  eta: 
+    l: 0.00001
+    u: 1.0 
+    dtype: loguniform
+
+  

@@ -1,0 +1,30 @@
+model: 
+  object: ExtraTreesInterface
+initial_params: 
+  criterion: squared_error 
+  max_depth:  10 
+  max_leaf_nodes: 5000
+  max_samples: 1.0
+  n_estimators: 100
+  bootstrap: True
+search_space: 
+  criterion: squared_error
+  n_estimators:
+    l: 25
+    u: 500
+    dtype: randint
+  max_depth: 
+    l: 1
+    u: 8
+    dtype: randint
+  max_leaf_nodes: 
+    l: 10
+    u: 400
+    dtype: randint
+  max_samples: 
+    l: 0
+    u: 1.0 
+    dtype: uniform
+  bootstrap: True
+
+  
