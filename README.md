@@ -1,3 +1,21 @@
+This code is associated with the following paper: 
+
+```
+@article{Kit_2023,
+doi = {10.1088/1361-6587/acb3f7},
+url = {https://dx.doi.org/10.1088/1361-6587/acb3f7},
+year = {2023},
+month = {feb},
+publisher = {IOP Publishing},
+volume = {65},
+number = {4},
+pages = {045003},
+author = {A Kit and A E Järvinen and L Frassinetti and S Wiesen and JET Contributors},
+title = {Supervised learning approaches to modeling pedestal density},
+journal = {Plasma Physics and Controlled Fusion},
+}
+```
+
 
 In order to reproduce the table from the paper, you will 
 - Data 
